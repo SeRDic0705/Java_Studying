@@ -5,7 +5,8 @@ public class AreaCalculator {
 	public static final int TRIANGLE = 2;
 	public static final int RECTANGLE = 3;
 	public static final int TRAPEZOID = 4;
-	
+	public static final int PARALLELOGRAM = 5;
+	public static final int RHOMBUS = 6;
 	
 	
 	public static double circleArea(double radius) {
@@ -20,5 +21,10 @@ public class AreaCalculator {
 	public static double trapezoidArea(double top, double bottom, double height) {
 		return (top+bottom)*height/2;
 	}
-	
+	public static double parallelogramArea(double width, double height) {
+		return width*height;
+	}
+	public static double rhombusArea(double horizon, double vertical) {
+		return horizon*vertical/2;
+	}
 }
