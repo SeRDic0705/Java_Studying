@@ -33,6 +33,20 @@ public class UserInput {
 	public static String getString() {
 		return scan.nextLine();
 	}
+	
+	public static FigureMode getFigureMode() {
+		FigureMode input;
+		while(true) {
+			try {
+				input = FigureMode.valueOf(scan.nextLine().toUpperCase());
+				break;
+			}
+			catch(NumberFormatException e) {
+				System.out.println("올바른 값(실수)를 입력해주세요.");
+			}
+		}
+		return input;
+	}
 
 }
 
